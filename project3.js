@@ -197,31 +197,179 @@ function ready() {
 //creates a sparrow
   var sparrowFrames =[];
   var quailFrames= [];
+  var wrenFrames = [];
+  var woodpeckerFrames = [];
+  var owlFrames = [];
+  var hawkFrames =[];
+  var roadrunnerFrames = [];
   for(var i=1;i<=2;i++){
     sparrowFrames.push(PIXI.Texture.fromFrame('sparrow'+i+'.png'));
     quailFrames.push(PIXI.Texture.fromFrame('quail'+i+'.png'));
+    wrenFrames.push(PIXI.Texture.fromFrame('cactusWren' +i+'.png'));
+    woodpeckerFrames.push(PIXI.Texture.fromFrame('woodpecker' +i+'.png'));
+    owlFrames.push(PIXI.Texture.fromFrame('owl'+i+'.png'));
+    hawkFrames.push(PIXI.Texture.fromFrame('hawk'+i+'.png'));
+    roadrunnerFrames.push(PIXI.Texture.fromFrame('roadrunner'+i+'.png'));
   }
-  sparrow = new PIXI.extras.MovieClip(sparrowFrames);
+  //extra frames of animation...
+  hawkFrames.push(PIXI.Texture.fromFrame('hawk3.png'));
+  roadrunnerFrames.push(PIXI.Texture.fromFrame('roadrunner3.png'));
+  roadrunnerFrames.push(PIXI.Texture.fromFrame('roadrunner4.png'));
+
+//1st owl
+  var owl = new PIXI.extras.MovieClip(owlFrames);
+  owl.position.set(452,102);
+  owl.animationSpeed = 0.08;
+//2nd owl
+  var owl2 = new PIXI.extras.MovieClip(owlFrames);
+  owl2.position.set(1008,0);
+  owl2.animationSpeed = 0.08;
+//1st roadrunner
+  var roadrunner = new PIXI.extras.MovieClip(roadrunnerFrames);
+  roadrunner.position.set(1290,323);
+  roadrunner.animationSpeed = 0.2;
+//2nd roadrunner
+  var roadrunner2 = new PIXI.extras.MovieClip(roadrunnerFrames);
+  roadrunner2.position.set(1750,370);
+  roadrunner2.animationSpeed = 0.2;
+//1st hawk
+  var hawk = new PIXI.extras.MovieClip(hawkFrames);
+  hawk.position.set(1290,70);
+  hawk.animationSpeed = 0.1;
+//2nd hawk
+  var hawk2 = new PIXI.extras.MovieClip(hawkFrames);
+  hawk2.position.set(1830,110);
+  hawk2.animationSpeed = 0.1;
+//1st woodpeckerFrames
+  var woodpecker = new PIXI.extras.MovieClip(woodpeckerFrames);
+  woodpecker.position.set(452,200);
+  woodpecker.animationSpeed = 0.1;
+//1st cactus wren
+  var wren = new PIXI.extras.MovieClip(wrenFrames);
+  wren.position.set(242,283);
+  wren.animationSpeed = 0.1;
+//2nd cactus wren
+  var wren2 = new PIXI.extras.MovieClip(wrenFrames);
+  wren2.position.set(944,215);
+  wren2.animationSpeed = 0.1;
+//3rd cactus wren
+  var wren3 = new PIXI.extras.MovieClip(wrenFrames);
+  wren3.position.set(1400,280);
+  wren3.animationSpeed = 0.1;
+//4th cactus wren
+  var wren4 = new PIXI.extras.MovieClip(wrenFrames);
+  wren4.position.set(1590,310);
+  wren4.animationSpeed = 0.1;
+//1st sparrow
+  var sparrow = new PIXI.extras.MovieClip(sparrowFrames);
   sparrow.position.set(125,175);
   sparrow.animationSpeed =0.1;
-  sparrow.interactive = true;
-  sparrow.on('mousedown', onButtonDown3);
-
-//creates another sparrow
-  sparrow2 = new PIXI.extras.MovieClip(sparrowFrames);
-  sparrow2.position.set(2000,275);
+//2nd sparrow
+  var sparrow2 = new PIXI.extras.MovieClip(sparrowFrames);
+  sparrow2.position.set(2000,245);
   sparrow2.animationSpeed =0.1;
-  sparrow2.interactive = true;
-  sparrow2.on('mousedown', onButtonDown3);
-
-//creates a quail
-  quail = new PIXI.extras.MovieClip(quailFrames);
+//3rd sparrow
+  var sparrow3 = new PIXI.extras.MovieClip(sparrowFrames);
+  sparrow3.position.set(700,183);
+  sparrow3.animationSpeed =0.1;
+//4th sparrow
+  var sparrow4 = new PIXI.extras.MovieClip(sparrowFrames);
+  sparrow4.position.set(720,170);
+  sparrow4.animationSpeed =0.1;
+//5th sparrow
+  var sparrow5 = new PIXI.extras.MovieClip(sparrowFrames);
+  sparrow5.position.set(1100,25);
+  sparrow5.animationSpeed =0.1;
+//6th sparrow
+  var sparrow6 = new PIXI.extras.MovieClip(sparrowFrames);
+  sparrow6.position.set(1035,100);
+  sparrow6.animationSpeed =0.1;
+//7th sparrow
+  var sparrow7 = new PIXI.extras.MovieClip(sparrowFrames);
+  sparrow7.position.set(1200,125);
+  sparrow7.animationSpeed =0.1;
+//1st quail
+  var quail = new PIXI.extras.MovieClip(quailFrames);
   quail.position.set(940,355);
   quail.animationSpeed =0.1;
-  quail.interactive = true;
-  quail.on('mousedown', onButtonDown3);
+//2nd quail
+  var quail2 = new PIXI.extras.MovieClip(quailFrames);
+  quail2.position.set(226,355);
+  quail2.animationSpeed =0.1;
+//3rd quail
+  var quail3 = new PIXI.extras.MovieClip(quailFrames);
+  quail3.position.set(1500,400);
+  quail3.animationSpeed =0.1;
+//4th quail
+  var quail4 = new PIXI.extras.MovieClip(quailFrames);
+  quail4.position.set(1445,310);
+  quail4.animationSpeed =0.1;
+//5th quail
+  var quail5 = new PIXI.extras.MovieClip(quailFrames);
+  quail5.position.set(1815,335);
+  quail5.animationSpeed =0.1;
+//1st hummingbird
+  var hummingbird = new PIXI.Sprite(PIXI.Texture.fromFrame('hummingbird.png'));
+  hummingbird.position.set(628,145);
+//2nd hummingbird
+  var hummingbird2 = new PIXI.Sprite(PIXI.Texture.fromFrame('hummingbird.png'));
+  hummingbird2.position.set(-10,25);
+//3rd hummingbird
+  var hummingbird3 = new PIXI.Sprite(PIXI.Texture.fromFrame('hummingbird.png'));
+  hummingbird3.position.set(990,245);
+//4th hummingbird
+  var hummingbird4 = new PIXI.Sprite(PIXI.Texture.fromFrame('hummingbird.png'));
+  hummingbird4.position.set(1100,0);
+//5th hummingbird
+  var hummingbird5 = new PIXI.Sprite(PIXI.Texture.fromFrame('hummingbird.png'));
+  hummingbird5.position.set(1710,0);
+//1st grackle
+  var grackle = new PIXI.Sprite(PIXI.Texture.fromFrame('grackle.png'));
+  grackle.position.set(538,159);
+//2nd grackle
+  var grackle2 = new PIXI.Sprite(PIXI.Texture.fromFrame('grackle.png'));
+  grackle2.position.set(732,65);
+//3rd grackle
+  var grackle3 = new PIXI.Sprite(PIXI.Texture.fromFrame('grackle.png'));
+  grackle3.position.set(1145,325);
+//4th grackle
+  var grackle4 = new PIXI.Sprite(PIXI.Texture.fromFrame('grackle.png'));
+  grackle4.position.set(1780,150);
+//5th grackle
+  var grackle5 = new PIXI.Sprite(PIXI.Texture.fromFrame('grackle.png'));
+  grackle5.position.set(1610,130);
+//1st dove
+  var dove = new PIXI.Sprite(PIXI.Texture.fromFrame('dove.png'));
+  dove.position.set(350,70);
+//2nd dove
+  var dove2 = new PIXI.Sprite(PIXI.Texture.fromFrame('dove.png'));
+  dove2.position.set(890,134);
+//3rd dove
+  var dove3 = new PIXI.Sprite(PIXI.Texture.fromFrame('dove.png'));
+  dove3.position.set(850,70);
+//1st cardinal
+  var cardinal = new PIXI.Sprite(PIXI.Texture.fromFrame('cardinal.png'));
+  cardinal.position.set(528,395);
+//2nd cardinal
+  var cardinal2 = new PIXI.Sprite(PIXI.Texture.fromFrame('cardinal.png'));
+  cardinal2.position.set(912,373);
+//3rd cardinal
+  var cardinal3 = new PIXI.Sprite(PIXI.Texture.fromFrame('cardinal.png'));
+  cardinal3.position.set(1425,368);
 
-//creates the player's sprite, birdman, and his animation
+  //array to store all birds to spot
+  var birdsTotalArray=[roadrunner,hawk,owl,owl2, sparrow, sparrow2, sparrow3,
+      sparrow4, quail,quail2,wren,wren2,woodpecker,sparrow5,sparrow6,sparrow7,
+      wren3,wren4,quail3,quail4,quail5,roadrunner2,hawk2,
+      hummingbird,hummingbird2,hummingbird3,grackle3,hummingbird4,hummingbird5,
+      grackle,grackle2,dove,dove2,dove3,cardinal,cardinal2,cardinal3,grackle4,
+      grackle5];
+  for(var i=0;i<birdsTotalArray.length;i++){
+      birdsTotalArray[i].interactive = true;
+      birdsTotalArray[i].on('mousedown',onButtonDown3);
+    }
+
+//creates the player's sprite, birdman, and his animation, + player friends..
   var bird = world.getObject("bird");
   var birdManframes = [];//you...
   var birdFriendFrames = [];//a friend...
@@ -231,8 +379,8 @@ function ready() {
     birdFriendFrames.push(PIXI.Texture.fromImage('birdFriend1.png'));
   }
   birdFriendFrames.push(PIXI.Texture.fromImage('birdFriend2.png'));
-  birdMan = new PIXI.extras.MovieClip(birdManframes);
-  birdFriend = new PIXI.extras.MovieClip(birdFriendFrames);
+  birdMan = new PIXI.extras.MovieClip(birdManframes);//this is you
+  birdFriend = new PIXI.extras.MovieClip(birdFriendFrames);//this is the friend
   birdMan.animationSpeed = 0.1;
   birdFriend.animationSpeed = 0.05;
   birdFriend.position.set(2350,420);
@@ -247,54 +395,73 @@ function ready() {
   player.anchor.x = 0.0;
   player.anchor.y= 1.0;
 
-//game title, to be shown very first!
-  var title = new PIXI.Text("FOR THE BIRDS 3",{font: '25px Calibri',
-            fill: 0x222034, strokeThickness : 2} );
-  title.position.set(175,50);
+//game simple start screen bg
+var titlebg = new PIXI.Sprite(PIXI.Texture.fromImage('titlescreen.png'));
+titlebg.position.set(0,0);
 
+//game title, to be shown very first!
+  var title = new PIXI.Text("Yes, More Birds",{font: '25px Calibri',
+            fill: 0xe4f1e8, strokeThickness : 2} );
+  title.position.set(160,50);
+
+//game sub-header
   var titleSub = new PIXI.Text("Click to begin",{font: '18px Calibri',
             fill: 0x222034} );
   titleSub.position.set(300,400);
 
+//button to confirm instructions read and start game
   var titleContinue = new PIXI.Text("Continue",{font: '18px Calibri',
             fill: 0x222034} );
   titleContinue.position.set(300,400);
   titleContinue.visible=false;
 
+//text fot button to display credits
   var titleCredits = new PIXI.Text("Credits",{font: '18px Calibri',
             fill: 0x222034} );
   titleCredits.position.set(300,425);
 
+//text of credits button changed to 'back' if credits already displayed
   var creditsBack = new PIXI.Text("Back",{font: '18px Calibri',
             fill: 0x222034} );
   creditsBack.position.set(300,425);
   creditsBack.visible=false;
 
+//credits text
   var creditsText = new PIXI.Text("Game by\nHailey Ginther",{font: '18px Calibri',
             fill: 0x222034, align: 'center'} );
   creditsText.position.set(200,200);
   creditsText.visible=false;
 
-  var instruction = new PIXI.Text("Instructions\n\
-    use 'a' & 'd' to traverse the map",{font: '18px Calibri',
+//how to play text
+  var instruction = new PIXI.Text("Instructions\n\n\
+  You are a bird birdwatcher on a mission:\n\
+  find all your friends.\n\
+  Spot a bird? Click that sucker\n\
+  Think your eyes are sharp enough to find them all?\n\n\
+  Use 'a' & 'd' to traverse the map\n\n\
+  When you are done, let your friend in the red shirt\n\
+  at the end of the map know!",{font: '18px Calibri',
             fill: 0x222034, align: 'center'} );
-  instruction.position.set(200,200);
+  instruction.position.set(50,100);
   instruction.visible=false;
 
-  var friendText = new PIXI.Text("Done?",{font: '18px Calibri',
-          fill: 0x222034, align: 'center'});
-  friendText.position.set(2300,300);
+//dialouge for 'birdFriend'
+  var friendText = new PIXI.Text("Done Lookin'?",{font: '20px Calibri',
+          fill: 0xe4f1e8, align: 'center', strokeThickness: 2});
+  friendText.position.set(2260,300);
   friendText.visible=false;
 
-  var friendYes = new PIXI.Text("Ya",{font: '18px Calibri',
-          fill: 0x222034, align: 'center'});
+//a text option to end the game and see score
+  var friendYes = new PIXI.Text("Ya",{font: '20px Calibri',
+          fill: 0xe4f1e8, align: 'center',strokeThickness: 2});
   friendYes.position.set(2280,320);
   friendYes.visible=false;
   friendYes.interactive=true;
   friendYes.on('mousedown',onButtonDown5);
 
-  var friendNo = new PIXI.Text("No",{font: '18px Calibri',
-          fill: 0x222034, align: 'center'});
+//a text option to decline option to end game
+  var friendNo = new PIXI.Text("No",{font: '20px Calibri',
+          fill: 0xe4f1e8, align: 'center',strokeThickness: 2});
   friendNo.position.set(2340,320);
   friendNo.visible=false;
   friendNo.interactive=true;
@@ -317,16 +484,9 @@ function ready() {
   //array to store graphics shown on start screen
   var titleObjArray = [title,titleSub,titleCredits];
 
-  //array to store all birds to spot
-  var birdsTotalArray=[sparrow, sparrow2, quail];
-
   //adding title parts to stage
   var entity_layer = world.getObject("Entities");
-  entity_layer.addChild(friendYes);
-  entity_layer.addChild(friendNo);
-  entity_layer.addChild(friendText);
-  entity_layer.addChild(birdFriend);
-  entity_layer.addChild(birdMan);
+
   //adds birds to spot
   for(var i=0;i<birdsTotalArray.length;i++){
     entity_layer.addChild(birdsTotalArray[i]);
@@ -336,16 +496,24 @@ function ready() {
     entity_layer.addChild(plantArray[i]);
   }
   //adds title parts
+  entity_layer.addChild(titlebg);
   entity_layer.addChild(titleButton1);
   entity_layer.addChild(titleButton2);
   for(var i=0;i<titleObjArray.length;i++){
     entity_layer.addChild(titleObjArray[i]);
   }
+
   //adding parts of post-title game parts
   entity_layer.addChild(titleContinue);
   entity_layer.addChild(instruction);
   entity_layer.addChild(creditsText);
   entity_layer.addChild(creditsBack);
+
+  entity_layer.addChild(friendYes);
+  entity_layer.addChild(friendNo);
+  entity_layer.addChild(friendText);
+  entity_layer.addChild(birdFriend);
+  entity_layer.addChild(birdMan);
 
   player.direction = movNone;
   player.moving = false;
@@ -362,15 +530,16 @@ function ready() {
       titleButton2.visible=false;
     }
     else{
-    entity_layer.addChild(player);
-    gameStarted = true;
-    instruction.visible=false;
-    titleButton1.visible=false;
-    titleContinue.visible=false;
-    birdMan.play();
-    sparrow.play();
-    sparrow2.play();
-    quail.play();
+      titlebg.visible = false;
+      birdMan.play();
+      entity_layer.addChild(player);
+      gameStarted = true;
+      instruction.visible=false;
+      titleButton1.visible=false;
+      titleContinue.visible=false;
+      for(var i =0;i<birdsTotalArray.length;i++){
+      birdsTotalArray[i].play();
+      }
     }
   }
 
@@ -433,10 +602,12 @@ function ready() {
     friendText.visible=false;
     friendYes.visible=false;
     var gameEndText = new PIXI.Text("You Spotted " + getBirdAmount()+
-    " out of " + birdsTotalArray.length,
-        {font: '18px Calibri', fill: 0x222034, align: 'center'});
-    gameEndText.position.set(2100,300);
+    " out of " + birdsTotalArray.length + " birds!\n Thanks for playing!",
+        {font: '22px Calibri', fill: 0xe4f1e8, align: 'center',
+        strokeThickness: 3});
+    gameEndText.position.set(2070,220);
     entity_layer.addChild(gameEndText);
+    birdMan.stop();
   }
 
   function getBirdAmount(){
