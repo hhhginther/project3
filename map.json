@@ -14,102 +14,6 @@
         {
          "draworder":"topdown",
          "height":15,
-         "name":"plants",
-         "objects":[
-                {
-                 "gid":10,
-                 "height":161,
-                 "id":16,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":131,
-                 "x":-4,
-                 "y":452
-                }, 
-                {
-                 "gid":11,
-                 "height":151,
-                 "id":17,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":235,
-                 "x":296,
-                 "y":391
-                }, 
-                {
-                 "gid":39,
-                 "height":450,
-                 "id":21,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":100,
-                 "x":-8,
-                 "y":445
-                }, 
-                {
-                 "gid":38,
-                 "height":341,
-                 "id":24,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":359,
-                 "x":2061,
-                 "y":390
-                }, 
-                {
-                 "gid":2147483658,
-                 "height":161,
-                 "id":26,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":131,
-                 "x":2222,
-                 "y":398
-                }, 
-                {
-                 "gid":11,
-                 "height":151,
-                 "id":27,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":235,
-                 "x":1963,
-                 "y":424
-                }, 
-                {
-                 "gid":2147483687,
-                 "height":450,
-                 "id":29,
-                 "name":"",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":100,
-                 "x":2299,
-                 "y":447
-                }],
-         "opacity":1,
-         "type":"objectgroup",
-         "visible":true,
-         "width":75,
-         "x":0,
-         "y":0
-        }, 
-        {
-         "draworder":"topdown",
-         "height":15,
          "name":"Entities",
          "objects":[
                 {
@@ -121,8 +25,8 @@
                  "type":"",
                  "visible":true,
                  "width":32,
-                 "x":240,
-                 "y":385
+                 "x":130,
+                 "y":450
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -139,7 +43,7 @@
         {
          "columns":3,
          "firstgid":1,
-         "image":"..\/..\/tileset.png",
+         "image":"..\/sprite files pr3\/tileset.png",
          "imageheight":96,
          "imagewidth":96,
          "margin":0,
@@ -175,135 +79,135 @@
             {
              "0":
                 {
-                 "image":"cactus1.png"
+                 "image":"..\/sprite files pr3\/cactus1.png"
                 },
              "1":
                 {
-                 "image":"cactus2.png"
+                 "image":"..\/sprite files pr3\/cactus2.png"
                 },
              "10":
                 {
-                 "image":"hawk3.png"
+                 "image":"..\/sprite files pr3\/hawk3.png"
                 },
              "11":
                 {
-                 "image":"hummingbird.png"
+                 "image":"..\/sprite files pr3\/hummingbird.png"
                 },
              "12":
                 {
-                 "image":"owl.png"
+                 "image":"..\/sprite files pr3\/owl.png"
                 },
              "13":
                 {
-                 "image":"owl1.png"
+                 "image":"..\/sprite files pr3\/owl1.png"
                 },
              "14":
                 {
-                 "image":"owl2.png"
+                 "image":"..\/sprite files pr3\/owl2.png"
                 },
              "15":
                 {
-                 "image":"owl3.png"
+                 "image":"..\/sprite files pr3\/owl3.png"
                 },
              "16":
                 {
-                 "image":"quail.png"
+                 "image":"..\/sprite files pr3\/quail.png"
                 },
              "17":
                 {
-                 "image":"quail1.png"
+                 "image":"..\/sprite files pr3\/quail1.png"
                 },
              "18":
                 {
-                 "image":"quail2.png"
+                 "image":"..\/sprite files pr3\/quail2.png"
                 },
              "19":
                 {
-                 "image":"roadrunner1.png"
+                 "image":"..\/sprite files pr3\/roadrunner1.png"
                 },
              "2":
                 {
-                 "image":"cactusWren.png"
+                 "image":"..\/sprite files pr3\/cactusWren.png"
                 },
              "20":
                 {
-                 "image":"roadrunner2.png"
+                 "image":"..\/sprite files pr3\/roadrunner2.png"
                 },
              "21":
                 {
-                 "image":"roadrunner3.png"
+                 "image":"..\/sprite files pr3\/roadrunner3.png"
                 },
              "22":
                 {
-                 "image":"roadrunner4.png"
+                 "image":"..\/sprite files pr3\/roadrunner4.png"
                 },
              "23":
                 {
-                 "image":"roadrunner5.png"
+                 "image":"..\/sprite files pr3\/roadrunner5.png"
                 },
              "24":
                 {
-                 "image":"roadrunner6.png"
+                 "image":"..\/sprite files pr3\/roadrunner6.png"
                 },
              "25":
                 {
-                 "image":"sparrow.png"
+                 "image":"..\/sprite files pr3\/sparrow.png"
                 },
              "26":
                 {
-                 "image":"sparrow1.png"
+                 "image":"..\/sprite files pr3\/sparrow1.png"
                 },
              "27":
                 {
-                 "image":"sparrow2.png"
+                 "image":"..\/sprite files pr3\/sparrow2.png"
                 },
              "28":
                 {
-                 "image":"tree1.png"
+                 "image":"..\/sprite files pr3\/tree1.png"
                 },
              "29":
                 {
-                 "image":"tree2.png"
+                 "image":"..\/sprite files pr3\/tree2.png"
                 },
              "3":
                 {
-                 "image":"cactusWren1.png"
+                 "image":"..\/sprite files pr3\/cactusWren1.png"
                 },
              "30":
                 {
-                 "image":"woodpecker1.png"
+                 "image":"..\/sprite files pr3\/woodpecker1.png"
                 },
              "31":
                 {
-                 "image":"woodpecker2.png"
+                 "image":"..\/sprite files pr3\/woodpecker2.png"
                 },
              "32":
                 {
-                 "image":"..\/bird.png"
+                 "image":"..\/sprite files pr3\/bird.png"
                 },
              "4":
                 {
-                 "image":"cactusWren2.png"
+                 "image":"..\/sprite files pr3\/cactusWren2.png"
                 },
              "5":
                 {
-                 "image":"cardinal.png"
+                 "image":"..\/sprite files pr3\/cardinal.png"
                 },
              "6":
                 {
-                 "image":"dove.png"
+                 "image":"..\/sprite files pr3\/dove.png"
                 },
              "7":
                 {
-                 "image":"grackle.png"
+                 "image":"..\/sprite files pr3\/grackle.png"
                 },
              "8":
                 {
-                 "image":"hawk1.png"
+                 "image":"..\/sprite files pr3\/hawk1.png"
                 },
              "9":
                 {
-                 "image":"hawk2.png"
+                 "image":"..\/sprite files pr3\/hawk2.png"
                 }
             },
          "tilewidth":285
