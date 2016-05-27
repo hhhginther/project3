@@ -75,7 +75,7 @@ function ready() {
   tweet = PIXI.audioManager.getAudio("tweet.mp3");
   blip = PIXI.audioManager.getAudio("Blip_Select4.mp3");
 
-//a test, adding a tree...
+//adding foliage in set locations..
   var tree = new PIXI.Sprite(PIXI.Texture.fromFrame("tree1.png"));
   tree.position.set(0,0);
   tree.scale.set(1.3);
@@ -117,8 +117,82 @@ function ready() {
   var cactus6 = new PIXI.Sprite(PIXI.Texture.fromFrame("cactus1.png"));
   cactus6.position.set(820,240);
 
+  var cactus7 = new PIXI.Sprite(PIXI.Texture.fromFrame("cactus1.png"));
+  cactus7.position.set(930,230);
+
+  var tree8 = new PIXI.Sprite(PIXI.Texture.fromFrame("tree1.png"));
+  tree8.position.set(945,0);
+  tree8.scale.set(1.3);
+
+  var tree9 = new PIXI.Sprite(PIXI.Texture.fromFrame("tree2.png"));
+  tree9.position.set(1025,375);
+  tree9.rotation = -1.4;
+
+  var tree10 = new PIXI.Sprite(PIXI.Texture.fromFrame("tree1.png"));
+  tree10.position.set(1020,0);
+  tree10.scale.set(1.3);
+
+  var tree11 = new PIXI.Sprite(PIXI.Texture.fromFrame("tree2.png"));
+  tree11.position.set(1000,-20);
+
+  var tree12 = new PIXI.Sprite(PIXI.Texture.fromFrame("tree2.png"));
+  tree12.position.set(1100,-50);
+
+  var tree13 = new PIXI.Sprite(PIXI.Texture.fromFrame("tree2.png"));
+  tree13.position.set(1300,-50);
+
+  var cactus8 = new PIXI.Sprite(PIXI.Texture.fromFrame("cactus1.png"));
+  cactus8.position.set(1400,275);
+
+  var cactus9 = new PIXI.Sprite(PIXI.Texture.fromFrame("cactus1.png"));
+  cactus9.position.set(1310,235);
+
+  var cactus10 = new PIXI.Sprite(PIXI.Texture.fromFrame("cactus1.png"));
+  cactus10.position.set(1480,245);
+
+  var tree10 = new PIXI.Sprite(PIXI.Texture.fromFrame("tree1.png"));
+  tree10.position.set(1520,0);
+  tree10.scale.set(1.3);
+
+  var cactus11 = new PIXI.Sprite(PIXI.Texture.fromFrame("cactus2.png"));
+  cactus11.position.set(1520,275);
+
+  var cactus12 = new PIXI.Sprite(PIXI.Texture.fromFrame("cactus2.png"));
+  cactus12.position.set(1700,245);
+  cactus12.scale.set(1.1);
+
+  var cactus13 = new PIXI.Sprite(PIXI.Texture.fromFrame("cactus1.png"));
+  cactus13.position.set(1950,235);
+
+  var cactus14 = new PIXI.Sprite(PIXI.Texture.fromFrame("cactus2.png"));
+  cactus14.position.set(2100,290);
+  cactus14.scale.set(0.8);
+
+  var tree11 = new PIXI.Sprite(PIXI.Texture.fromFrame("tree1.png"));
+  tree11.position.set(2250,0);
+  tree11.scale.set(1.3);
+
+  var tree12 = new PIXI.Sprite(PIXI.Texture.fromFrame("tree2.png"));
+  tree12.position.set(2000,0);
+
+  var tree13 = new PIXI.Sprite(PIXI.Texture.fromFrame("tree2.png"));
+  tree13.position.set(2100,-50);
+
+  var tree14 = new PIXI.Sprite(PIXI.Texture.fromFrame("tree2.png"));
+  tree14.position.set(2250,-50);
+
+  var cactus15 = new PIXI.Sprite(PIXI.Texture.fromFrame("cactus1.png"));
+  cactus15.position.set(2250,300);
+  cactus15.scale.set(0.8);
+
+  var cactus16 = new PIXI.Sprite(PIXI.Texture.fromFrame("cactus2.png"));
+  cactus16.position.set(2250,260);
+  cactus16.scale.set(0.8);
+
   var plantArray = [tree6,cactus3,tree,tree2,cactus,tree7,cactus2,cactus5,tree3,
-                    tree4,tree5,cactus4,cactus6];
+                    tree4,tree5,cactus4,tree8,cactus9,tree9,cactus6,cactus7,tree10,
+                    tree11,tree12,tree13,cactus10,cactus16,cactus8,tree10,tree13,cactus11,cactus12,
+                    cactus13,cactus14,tree11,tree12,tree14,cactus15];
 
 //creates a sparrow
   var sparrowFrames =[];
@@ -142,7 +216,7 @@ function ready() {
 
 //creates a quail
   quail = new PIXI.extras.MovieClip(quailFrames);
-  quail.position.set(865,355);
+  quail.position.set(940,355);
   quail.animationSpeed =0.1;
   quail.interactive = true;
   quail.on('mousedown', onButtonDown3);
